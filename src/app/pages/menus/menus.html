@@ -1,0 +1,15 @@
+<h1>Nuestros Menús</h1>
+
+<div class="menus">
+  @for (menu of menus; track menu.id) {
+    <div class="menu-card">
+      <h2>{{ menu.nombre }}</h2>
+      <p class="precio">$ {{ menu.precio }}</p>
+      <p>{{ menu.descripcion }}</p>
+
+      <button> 
+        Ver especificaciones
+      </button>
+    </div>
+  }
+</div>
